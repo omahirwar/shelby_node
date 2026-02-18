@@ -14,7 +14,7 @@
 
 ----
 
-1️⃣ Dependencies for WINDOWS & LINUX & VPS
+1 Dependencies for WINDOWS & LINUX & VPS
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 ```
@@ -25,7 +25,7 @@ sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano aut
 sudo apt install -y libssl-dev ca-certificates
 ```
 
-2️⃣ Install Node.js & Git
+2 Install Node.js & Git
 ```
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs git
@@ -36,7 +36,7 @@ npm -v
 git --version
 ```
 
-3️⃣ Install Shelby CLI
+3 Install Shelby CLI
 ```
 npm i -g @shelby-protocol/cli
 ```
@@ -44,7 +44,7 @@ npm i -g @shelby-protocol/cli
 shelby --version
 ```
 
-4️⃣ Get Your API Key
+4 Get Your API Key
 
 1. Open **https://geomi.dev**
 2. Click **Sign Up** and create an account
@@ -56,7 +56,7 @@ shelby --version
 5. Click **Submit**
 6. **Copy your API key** (starts with `aptoslabs_...`)
 
-5️⃣ Initialize Shelby
+5 Initialize Shelby
 ```
 shelby init
 ```
@@ -77,7 +77,7 @@ shelby account list
 nano ~/.shelby/config.yaml
 ```
 
-6️⃣ Get Free Tokens
+6 Get Free Tokens
 
 You need **APT** (gas fees) and **ShelbyUSD** (storage fees).
 
@@ -92,14 +92,14 @@ On the faucet page:
 2. Click **Fund** to get APT tokens
 3. Click **Fund** again for ShelbyUSD tokens
 
-7️⃣ Check Your Balance
+7 Check Your Balance
 ```
 shelby account balance
 ```
 
 You should see both **APT** and **ShelbyUSD** with balances > 0.
 
-8️⃣ Create and Upload a File
+8 Create and Upload a File
 ```
 echo "YOUR OG DAD!" > eba.txt
 ```
@@ -107,14 +107,14 @@ echo "YOUR OG DAD!" > eba.txt
 shelby upload eba.txt myfile.txt -e "in 7 days" --assume-yes
 ```
 
-9️⃣ Verify Upload
+9 Verify Upload
 ```
 shelby account blobs
 ```
 
 You should see `myfile.txt` in the list.
 
-1️⃣0️⃣ Download the File
+10 Download the File
 ```
 shelby download myfile.txt downloaded.txt
 ```
@@ -131,7 +131,7 @@ Output: `Hello Shelby Babes!`
 
 ### 🔶For Next Day Run This Command
 
-1️⃣ Resume Codespace
+1 Resume Codespace
 
 1. Go to your GitHub repository
 2. Click **Code → Codespaces**
@@ -139,7 +139,7 @@ Output: `Hello Shelby Babes!`
 
 Wait until terminal loads.
 
-2️⃣ Check Shelby CLI
+2 Check Shelby CLI
 ```
 shelby --version
 ```
@@ -147,7 +147,7 @@ shelby --version
 If version shows → good ✅
 (No need to reinstall)
 
-3️⃣ Check Balance
+4 Check Balance
 ```
 shelby account balance
 ```
@@ -160,12 +160,12 @@ shelby faucet --no-open
 
 Open faucet link in browser and fund again.
 
-4️⃣ Create New Daily File
+5 Create New Daily File
 ```
 echo "Shelby Daily Activity" > daily.txt
 ```
 
-5️⃣ Upload With Unique Name
+6 Upload With Unique Name
 
 Very important → unique name daily
 
@@ -178,14 +178,14 @@ Example file name:
 daily-2026-02-15.txt
 ```
 
-6️⃣ Verify Upload
+7 Verify Upload
 ```
 shelby account blobs
 ```
 
 You should see `daily-2026-02-15.txt` in the list.
 
-7️⃣ Download the File
+8 Download the File
 ```
 shelby download daily-2026-02-15.txt downloaded.txt
 ```
